@@ -1,0 +1,62 @@
+
+body
+{
+	background-color: #f291ba;
+	font-family: Lato;
+}
+
+h1
+{
+	color: #2d2125;
+	margin-bottom: 0px;
+}
+h2, h3, h4
+{
+	margin-top: 0px;
+	color: #682e47;
+}
+
+hr
+{
+	color: #682e47;
+}
+
+a
+{
+	color: #682e47;
+	font-weight: bold;
+}
+a:visited
+{
+	color: #2d2125;
+}
+
+.centered_text
+{
+	text-align: center;
+}
+
+.centered_div
+{
+	width: 100%;
+	margin: auto;
+}
+
+.skinny_block
+{
+	max-width: 350px;
+	margin: auto;
+}
+
+.wide_block
+{
+	max-width: 550px;
+	margin: auto;
+}
+
+.inline_title
+{
+	color: #2d2125;
+	font-size: 1.3em;
+	font-weight: bolder;
+}

@@ -1,34 +1,115 @@
 
+:root
+{
+	--pink-dark: #2d2125;
+	--pink: #682e47;
+	--pink-light: #f291ba;
+	
+	--background1: #191b1c;
+	--background2: #1f2223;
+	--background3: #272a2b;
+	--border1: #343a3b;
+	--border2: #464a4d;
+	--border3: #71767f;
+	--text1: #dddee0;
+	--text2: #a3a5a6;
+	--text3: #5c6067;
+	--blue0: #b3e1f2;
+	--blue1: #0079a6;
+	--blue2: #006185;
+	--blue3: #103c4c;
+	--red1: #ff6666;
+}
+
+html
+{
+	background-color: var(--background1);
+	min-width: 100%;
+	min-height: 100%;
+	box-shadow: inset 0 0 100px #000;
+}
+.centered_page
+{
+	width: 100%;
+	height: 100%;
+}
+
 body
 {
-	background-color: #f291ba;
-	font-family: Lato;
+	font-family: "Yrsa", serif;
+	font-size: 1.25em;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	
+	color: white;
+	
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 h1
 {
-	color: #2d2125;
-	margin-bottom: 0px;
+	color: var(--blue1);
 }
 h2, h3, h4
 {
-	margin-top: 0px;
-	color: #682e47;
+	color: var(--text2);
 }
 
 hr
 {
-	color: #682e47;
+	/* color: #010101; NOTE: Not sure why, but making this "black" actually makes it grey  */
+	color: var(--background3);
+	width: 100%;
 }
 
 a
 {
-	color: #682e47;
+	color: var(--blue1);
 	font-weight: bold;
 }
 a:visited
 {
-	color: #2d2125;
+	color: var(--blue1);
+}
+
+p
+{
+	margin: 15px;
+}
+
+.header_group
+{
+	text-align: center;
+}
+.header_group > h1
+{
+	margin: 0px;
+	margin-top: 25px;
+	padding: 0px;
+}
+.header_group > h2
+{
+	margin: -10px;
+	padding: 0px;
+}
+.header_group > h3
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.title_link
+{
+	text-decoration: none;
 }
 
 .centered_text
@@ -42,21 +123,102 @@ a:visited
 	margin: auto;
 }
 
+.nav_list
+{
+	flex-direction: row;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+.nav_list > a
+{
+	padding: 10px 40px;
+	text-decoration: none;
+	color: var(--blue1);
+}
+.nav_list_link
+{
+	background-color: var(--background1);
+}
+.nav_list_link:hover
+{
+	background-color: var(--background2);
+}
+a.nav_list_current_page
+{
+	text-decoration: none;
+	color: var(--text1);
+	background-color: var(--background3);
+	cursor: default;
+}
+
+.home_container
+{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.home_name
+{
+	font-size: 5em;
+	color: var(--blue0);
+	font-weight: bold;
+	text-align: right;
+}
+.home_divider
+{
+	border: none;
+/*	background-color: var(--blue0);*/
+	background-color: black;
+	width: 2px;
+	margin-left: 8px;
+	margin-right: 8px;
+	display: inline-block;
+}
+.home_nav_list
+{
+	position: relative;
+	left: 0px;
+	line-height: 1.25;
+	padding: 0px;
+	margin-left: 4px;
+	font-size: 2em;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+}
+a.home_nav_link
+{
+	color: var(--blue1);
+	text-decoration: none;
+}
+a.home_nav_link:hover
+{
+	color: var(--blue0);
+}
+
 .skinny_block
 {
-	max-width: 350px;
-	margin: auto;
+	width: auto;
 }
 
 .wide_block
 {
 	max-width: 550px;
-	margin: auto;
+}
+
+.info_list > p
+{
+	margin: 0px;
 }
 
 .inline_title
 {
-	color: #2d2125;
+	color: var(--text2);
 	font-size: 1.3em;
 	font-weight: bolder;
+	margin-right: 15px;
 }

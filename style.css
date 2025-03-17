@@ -222,3 +222,14 @@ a.home_nav_link:hover
 	font-weight: bolder;
 	margin-right: 15px;
 }
+
+.large_button
+{
+	margin: auto;
+	width: 300px;
+	height: 75px;
+	line-height: 75px;
+	color: var(--text1);
+	text-align: center;
+	background-color: var(--blue1);
+}

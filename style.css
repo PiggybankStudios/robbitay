@@ -123,6 +123,11 @@ p
 	margin: auto;
 }
 
+.centered_header
+{
+	text-align: center;
+}
+
 .nav_list
 {
 	flex-direction: row;

@@ -21,9 +21,62 @@
 		</div>
 		<hr/>
 		<div class="wide_block">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			<div>
+				<h1 class="centered_header">Princess Castle Quest</h1>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/T5lt-aCkOwk?si=EBOrzFNtVn3hYgMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<table><tr>
+					<td>
+						<a href="https://store.steampowered.com/app/1103550/Princess_Castle_Quest/"><div class="large_button">Steam Page &gt;</div></a></td>
+					<td>
+						<a href="https://princesscastlequest.itch.io/demo"><div class="large_button">Itch.io Page &gt;</div></a></td>
+				</tr></table>
+				<p>Princess Castle Quest was the first project that I decided I was going to “finish” and ship properly. It started out as a recreation of an old idea that I had tried in High School with my brother when we were in a programming class together. We were inspired by games like Chips Challenge and the dungeons from The Legend of Zelda. We wanted to include as many puzzle mechanics as possible and also provide a level editor where people could try making their own levels and combine mechanics in ways we never even dreamed of. This is by far the biggest project I’ve worked on with over 150,000 lines of code, a team of 5 people, and a bit of contract work for trailers, legal documents, and other business necessities. The project has forced me to grow as a programmer and also introduced me to a dozen other roles and responsibilities that I’ve never tried to fulfill before. During the last year of development I decided to go full-time in order to properly realize the vision that we had for the game as well as give me time to properly focus on the work required to finish a game. I learned so many things including methods to encourage and manage people and expectations, how and why you might trademark a title, how to set up legal agreements and pay royalties, how to work with artists and composers to iteratively create and refine assets for the game, how to manage a community of people interested in the product, how to develop interest and market the game properly, how to playtest and manage code changes and mistakes, how to maintain a changelog and version information, how to obtain and record feedback from playtesters and friends, and so much more. In the end, as with all creative endeavors I assume, the game is not perfect and I wish I could spend many more hours adding and fixing and refining things. However, I am really happy with the finished product and I think it will always hold a place in my heart as the first real game I made.</p>
+			</div>
+			
+			<hr/>
+			
+			<div>
+				<h1 class="centered_header">Pig Core</h1>
+				<div style="text-align:center"><img class="wide_block" src="pig_core_folders.png"/></div>
+				<a href="https://github.com/PiggybankStudios/PigCore"><div class="large_button">Github &gt;</div></a>
+				<p>PigCore is a rewrite of pieces of other repositories I've created in the past like <a href="https://github.com/PiggybankStudios/PigEngine">Pig Engine</a>, <a href="https://github.com/PiggybankStudios/GyLib">GyLib</a>, etc. but written in pure C (not C++) and with some new goals and assumptions that align better with my goals as a programmer. The name "Pig" is a useful prefix for names in the codebase since it's 3 letters and easy to pronounce, "Core" simply describes that this repository contains all the of the core functionality of a project that depends on Pig technology.</p>
+			</div>
+			
+			<hr/>
+			
+			<div>
+				<h1 class="centered_header">C-Switch</h1>
+				<img class="wide_block" src="cswitch.png"/>
+				<a href="https://github.com/PiggybankStudios/CSwitch"><div class="large_button">Github &gt;</div></a>
+				<p>A simple project to turn on/off defines in a C/C++ header file quickly. This project is based on <a href="https://github.com/PiggybankStudios/PigCore">PigCore</a>, it uses <a href="https://github.com/floooh/sokol/blob/master/sokol_gfx.h">sokol_gfx.h</a> and <a href="https://github.com/floooh/sokol/blob/master/sokol_app.h">sokol_app.h</a> to make a graphical window, and <a href="https://github.com/nicbarker/clay">Clay</a> to do UI layout.</p>
+			</div>
+			
+			<hr/>
+			
+			<div>
+				<h1 class="centered_header">Const Port</h1>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/7QZL8bbqGOc?si=XFDOFusYuT3Oef80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<a href="https://constport.handmade.network/"><div class="large_button">Handmade Network Page &gt;</div></a>
+				<p>Const Port was a simple little program that I worked on in my off time while working for Sure-Fi and ended up saving me countless hours over the 4 years I worked there. I was dissatisfied with the available programs for reading data from COM ports on windows (like PuTTY and TeraTerm) and wanted something that had stuff like colored lines and smooth scrolling. These things are vital in scenarios like the one depicted in the video where data is constantly being printed out and I wanted to get a handle on how often it’s coming in and I needed to track certain lines with my eyes and scroll back up while data is still coming in. The line coloring is handled by the regex configuration options that match the first character of every line (0x01-0x05) and changed the line color based off that. I also enjoyed being able to add simple yet helpful features over time like the “LEDs” in the top right that indicate data received or data transmitted and can really help visualize the frequency of messages coming in. This program also went on to be used on the production line to take incoming data from a hand-held scanner, talk to the microcontroller on the product being registered, and communicate with a server through APIs to log the information and request licenses for the new product. We even sped up production by displaying QR code labeled buttons that the assembly person could scan with their scanner rather than manipulating a mouse or keyboard and we added sound effects to queue them in on successes and failures of the process to help them spend less time reading repetitive debug output. I also started work on a newer version of the program in late 2018 that had better support for selection and text manipulation but I never finished it to the point that it would replace the old version. Also the old version worked well enough that there was no real need to replace it. This project taught me a lot about text manipulation, input devices, and font rendering as well as some old Win32 APIs for interacting with COM ports and how drivers for various pieces of hardware normally work. It also made a massive difference to my productivity level as an embedded programmer since I could debug problems faster and catch them sooner. Whereas other embedded engineers would often take the restrictions of working on a physical microcontroller as a given and try to deal with the fact that most of the operations going on in production units were a black box. Overall Const Port was a wonderfully successful tool for me and well worth the invested time.</p>
+			</div>
+			
+			<hr/>
+			
+			<div>
+				<h1 class="centered_header">Sure-Fi Module</h1>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/pkQumddzkXo?si=mm4z3Dcd78IQMVLp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<a href="https://www.sure-fi.com/products"><div class="large_button">Sure-Fi Website &gt;</div></a>
+				<p>In conjunction with the lead RF Engineer at Sure-Fi Craig Boswell I designed a Radio Module interface that can control the 900MHz radio using external application boards that communicate to the module over a UART connection. I had to design and implement a stack that would manage packets, collisions, and retries as well as robust encryption and pairing sequences. This project was the first project that I worked on for longer than a year and it was a really good learning experience for me in how to organize large code bases and create documentation. It also was very technically challenging to come up with a good protocol for communication that was robust and dealt with errors while also being versatile so that different applications could use the radio in different ways. I also worked closely with the CTO John Robinson to create a reliable yet simple to execute pairing process which used QR codes and embedded bluetooth chips to connect two devices together so they could communicate.</p>
+			</div>
+			
+			<hr/>
+			
+			<div>
+				<h1 class="centered_header">Loco Stoko</h1>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/RQETsOBWX5A?si=cp-qFoXC354SFjOG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<a href="https://princesscastlequest.itch.io/loco-stoko"><div class="large_button">Itch.io Page &gt;</div></a>
+				<p>Built using a fork of the engine from Princess Castle Quest we made this little game in 48 hours for the Game Makers Toolkit 2020 Game Jam which had the theme “Out of Control”. We originally started with the idea of a rythm based gameplay mechanic where you are throwing colored coal into a furnace of a run away train in order to signal what sort of tracks should be built next. The rythm mechanic had to be scrapped since we ran out of time to tune the game so it wouldn’t be too difficult but the basic gameplay is still surprisingly fun and the music is pretty groovy with the train puffing sounds setting the beat. I had 4 friends helping with the project, Cayla for artwork, Levi for music, Devon for level design and writing, and Kyle doing miscellaneous artwork, testing, and level design.</p>
+			</div>
 		</div>
 	</body>
 </html>

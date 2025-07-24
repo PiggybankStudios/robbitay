@@ -123,6 +123,11 @@ p
 	margin: auto;
 }
 
+.centered_header
+{
+	text-align: center;
+}
+
 .nav_list
 {
 	flex-direction: row;
@@ -221,4 +226,15 @@ a.home_nav_link:hover
 	font-size: 1.3em;
 	font-weight: bolder;
 	margin-right: 15px;
+}
+
+.large_button
+{
+	margin: auto;
+	width: 300px;
+	height: 75px;
+	line-height: 75px;
+	color: var(--text1);
+	text-align: center;
+	background-color: var(--blue1);
 }
